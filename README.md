@@ -1,10 +1,10 @@
 # Moving Average Trading Strategy Optimizer
 
-A Python-based trading strategy that optimizes Simple Moving Average (SMA) and Fast Moving Average (FMA) parameters for the S&P 500 index, with comprehensive backtesting and performance analysis.
+A Python-based trading strategy that optimizes simple slow-moving average and fast-moving average parameters for the S&P 500 index, with comprehensive backtesting and performance analysis.
 
 ## Overview
 
-This project implements a systematic approach to finding optimal moving average crossover parameters for trading the S&P 500. The strategy uses a dual moving average system where buy signals are generated when the fast moving average crosses above the slow moving average, and positions are closed when the fast MA falls below the slow MA.
+This project implements a systematic approach to finding optimal moving average crossover parameters for trading the S&P 500. The strategy uses a dual moving average system where buy signals are generated when the fast-moving average (FMA) crosses above the slow-moving average (SMA), and positions are closed when the FMA falls below the SMA.
 
 ## Features
 
@@ -111,18 +111,18 @@ The script will:
 Modify these variables to test different scenarios:
 
 ```python
-# Change ticker symbol
+# change ticker symbol
 ticker = "^IXIC"  # NASDAQ Composite
 
-# Adjust date range
+# adjust date range
 start = '2010-01-01'
 end = '2020-12-31'
 
-# Modify search ranges
-sma_range = range(100, 300, 10)  # Different SMA range
-fma_range = range(10, 50, 5)     # Different FMA range
+# modify search ranges
+sma_range = range(100, 300, 10)  # different SMA range
+fma_range = range(10, 50, 5)     # different FMA range
 
-# Adjust costs
+# adjust costs
 trans_cost = 0.005  # 0.5% transaction cost
 ```
 
