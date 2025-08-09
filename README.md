@@ -2,6 +2,8 @@
 
 A Python-based trading strategy that optimizes simple slow-moving average and fast-moving average parameters for the S&P 500 index, with comprehensive backtesting and performance analysis.
 
+Note that this is a simplified model that considers basic transaction costs but does not account for slippage, bid-ask spreads, or other real-world trading frictions.
+
 ## Overview
 
 This project implements a systematic approach to finding optimal moving average crossover parameters for trading the S&P 500. The strategy uses a dual moving average system where buy signals are generated when the fast-moving average (FMA) crosses above the slow-moving average (SMA), and positions are closed when the FMA falls below the SMA.
